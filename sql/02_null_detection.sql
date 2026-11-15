@@ -156,7 +156,9 @@ AND (
     OR order_delivered_customer_date IS NULL
 );
 
-
+select c.customer_id,c.customer_city
+from stg_customers as c
+where c.customer_id is null and c.customer_city is null
 
 
 
